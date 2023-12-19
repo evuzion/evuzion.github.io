@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUT'DCG</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4; /* Fond stylé */
+            color: #333; /* Couleur du texte principale */
+        }
+
+        header {
+            background: #731a15; /* Fond de l'en-tête */
+            color: #fff; /* Couleur du texte de l'en-tête */
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .cta-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cta-buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background-color: #891d0b;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-buttons a:hover {
+            background-color: #521a0c;
+        }
+
+        nav {
+            background: #891d0b; /* Fond du menu */
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        main {
+            margin-top: 120px; /* Pour éviter que le contenu soit caché derrière l'en-tête fixe et les boutons */
+            padding: 20px;
+        }
+
+        /* Ajout de styles supplémentaires pour un aspect haut de gamme */
+        main p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #000000;
+        }
+
+        footer {
+            background: #731a15; /* Fond du pied de page */
+            color: #fff; /* Couleur du texte du pied de page */
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000; /* Assurez-vous que le pied de page est au-dessus du contenu principal */
+        }
+
+        /* Ajout de styles pour les liens du menu en bas avec l'effet d'ombre au survol */
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        footer a:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+		
+        /* Ajout de styles pour l'image */
+        .site-image {
+            max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur du conteneur parent */
+            height: auto; /* Pour maintenir les proportions de l'image */
+            display: block; /* Élimine l'espace sous l'image */
+            margin: 10px auto; /* Centrer l'image avec une marge en haut et en bas */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenue en DCG</h1>
+        <div class="cta-buttons">
+            <a href="révision.html"> Révision </a>
+            <a href="entraînement.html"> entraînement </a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="révision.html"> Révision </a> 		
+        <a href="entraînement.html"> entraînement </a>
+    </nav>
+
+    <main>
+        <p><b>Bienvenue sur notre site dédié au Diplôme de Comptabilité et de Gestion (DCG). Explorez les sections de Révision et Jeux pour une expérience d'apprentissage enrichissante.<b/></p>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        // JavaScript pour ajouter un effet d'ombre lorsqu'on clique sur un lien du menu en bas
+        document.querySelectorAll('footer a').forEach(link => {
+            link.addEventListener('click', () => {
+                link.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.5)';
+                setTimeout(() => {
+                    link.style.boxShadow = 'none';
+                }, 300);
+            });
+        });
+    </script>
+
+</body>
+</html>
